@@ -1,11 +1,11 @@
-/* Resetando estilo padrão */
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Corpo e fonte */
+/* Corpo da página */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -14,7 +14,7 @@ body {
 /* Seção de Introdução */
 #intro {
     background: #222;
-    color: #fff;
+    color: white;
     text-align: center;
     padding: 100px 20px;
 }
@@ -31,82 +31,82 @@ body {
 
 #intro .btn {
     background: #f39c12;
-    color: #fff;
+    color: white;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
-/* Seção de Detalhes */
+/* Seção de características */
 #details {
     background: #f4f4f4;
-    padding: 50px 20px;
     text-align: center;
+    padding: 50px 20px;
 }
 
-#details .grid {
+#details .feature-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 30px;
 }
 
 #details .feature {
-    background: #fff;
+    background: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #details .feature i {
     font-size: 3rem;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     color: #f39c12;
 }
 
-/* Seção de Testemunhos */
+/* Seção de depoimentos */
 #testimonials {
     background: #fff;
-    padding: 50px 20px;
     text-align: center;
+    padding: 50px 20px;
 }
 
-#testimonials .carousel {
+#testimonials .testimonial-carousel {
     display: flex;
     overflow-x: auto;
+    justify-content: center;
 }
 
 #testimonials .testimonial {
-    min-width: 300px;
-    margin: 0 20px;
     background: #f4f4f4;
     padding: 20px;
     border-radius: 10px;
+    margin: 0 10px;
+    min-width: 250px;
 }
 
 #testimonials .testimonial h4 {
-    font-weight: bold;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 /* Seção de Chamada para Ação */
 #cta {
     background: #333;
-    color: #fff;
-    padding: 50px 20px;
+    color: white;
     text-align: center;
+    padding: 50px 20px;
 }
 
 #cta .btn {
     background: #f39c12;
-    color: #fff;
+    color: white;
     padding: 15px 30px;
     text-decoration: none;
     font-size: 1.2rem;
     border-radius: 5px;
 }
 
-/* Seção de Contato */
+/* Seção de contato */
 #contact {
     background: #f4f4f4;
     padding: 50px 20px;
@@ -129,17 +129,16 @@ body {
 
 #contact button {
     background: #f39c12;
-    color: #fff;
+    color: white;
     padding: 15px 30px;
     border: none;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
-    #details .grid {
+    #details .feature-grid {
         grid-template-columns: 1fr;
     }
 }
-
